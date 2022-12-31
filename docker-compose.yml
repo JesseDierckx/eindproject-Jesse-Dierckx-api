@@ -3,4 +3,9 @@ services:
  api-eindproject:
   image: r0793084/api-eindproject-jesse-dierckx
   ports:
-    - "8000:8000" 
+    - "8000:8000"
+  volumes:
+    - sqlite_useritems_volume:/code/sqlitedb
+
+volumes:
+  sqlite_useritems_volume:
