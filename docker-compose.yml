@@ -1,17 +1,11 @@
 version: "3.9"
 services:
- api-eindproject:
+ api-service-eindproject:
   image: r0793084/api-eindproject-jesse-dierckx
   ports:
     - "8000:8000"
- mysql:
-   image: "mysql:8"
-   environment:
-     MYSQL_ROOT_PASSWORD: abc123
-   ports:
-     - "3306:3306"
-   volumes:
-     - mysql_data_container:/var/lib/mysql
+  volumes:
+    - sqlite_useritems_volume:/code/sqlitedb
 
 volumes:
-  mysql_data_container:
+  sqlite_useritems_volume:
