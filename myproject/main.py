@@ -1,44 +1,25 @@
-from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi import Depends, FastAPI, HTTPException
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
-
-
 
 import os
-from database import SessionLocal, engine
-from myproject import crud
-from myproject import models
-from myproject import schemas
-from myproject import auth
 
+import auth
+import crud
+import models
+import schemas
+from database import SessionLocal, engine
+
+print("We are in the main.......")
 if not os.path.exists('.\sqlitedb'):
+    print("Making folder.......")
     os.makedirs('.\sqlitedb')
 
-#"sqlite:///./sqlitedb/sqlitedata.db"
+print("Creating tables.......")
 models.Base.metadata.create_all(bind=engine)
+print("Tables created.......")
 
 app = FastAPI()
-
-security = HTTPBasic()
-
-
-origins = [
-    "http://localhost",
-    "http://localhost:8080",
-    "https://localhost.tiangolo.com",
-    "http://127.0.0.1:5500"
-]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 
 # Dependency
 def get_db():
