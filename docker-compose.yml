@@ -1,6 +1,6 @@
 version: "3.9"
 services:
- apieindproject:
+ api-eindproject:
   image: r0793084/eindproject-jesse-dierckx-api
   ports:
     - "8000:8000"
