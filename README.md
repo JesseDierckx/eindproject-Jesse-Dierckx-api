@@ -33,7 +33,7 @@ Dit kan natuurlijk ook hgebruikt worden als memo voor dingen dat ze moeten doen.
 
 ## Volledige OpenAPI docs screenshot(s) op GitHub README.md
 
-als eerste zal ik de openapi docs screenshots laten zien omdat dit een goede overview geeft
+Als eerste zal ik de openapi docs screenshots laten zien omdat dit een goede overview geeft
 ![img_1.png](images/img_1.png)
 ![img_3.png](images/img_3.png)
 ![img_4.png](images/img_4.png)
@@ -56,7 +56,7 @@ Zoals je hierboven kunt zien heb ik 2 post functions en 3 get functions exclusie
 
 
 ## hashing en oauth implementatie:
-zoals je hieronder kan zien is oauth en hashing correct geimplementeerd in een aparte python file zoals in de klas gedemonstreerd
+Zoals je hieronder kan zien is oauth en hashing correct geimplementeerd in een aparte python file zoals in de klas gedemonstreerd
 ![img_16.png](images/img_16.png)
 ![img_17.png](images/img_17.png)
 
@@ -101,8 +101,16 @@ Hieronder zal ik laten zien dat ik de correcte manier heb gebruikt om een crus o
 zoals je kan zien is alles op een fatsoenlijke manier opgebouwd.
 
 ### Github actions
+![img40.png](images/img40.png)
+![img41.png](images/img41.png)
+![img42.png](images/img42.png)
 
-
+## deployment naar okteto
+![img_43.png](images/img_43.png)
+![img_44.png](images/img_44.png)
+![img_45.png](images/img_45.png)
+![img_46.png](images/img_46.png)
+![img_47.png](images/img_47.png)
 ### Als extra nog een screenshot van de database in DB browser for sqlite
 ![img_31.png](images/img_31.png)
 
@@ -111,7 +119,7 @@ zoals je kan zien is alles op een fatsoenlijke manier opgebouwd.
 
 p.s de link helemaal vanboven is om naar mijn contributors pagina te gaan van mijn API repository.
 en als je ziet dat de foto's weg zijn in mijn github repository ik heb deze later in de images map gezet.
-
++ ik heb er nog een file bijgestoken met de passwords van de aangemaakte users zodat u ook zelf zou kunnen checken of het daadwerkelijk werkt of niet deze staat in de images map.
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/JesseDierckx/eindproject-Jesse-Dierckx-api/graphs/contributors
