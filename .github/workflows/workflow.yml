@@ -1,6 +1,5 @@
-# This is a basic workflow to help you get started with Actions
+name: Deliver container
 
-name: build container
 on: push
 
 jobs:
@@ -11,11 +10,11 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v1
 
-      - name: Docker Login
+      - name: Docker login
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Build
-        run: docker build -t ${{ secrets.DOCKER_USER }}/api-eindproject-jesse-dierckx:latest .
+        run: docker build -t ${{ secrets.DOCKER_USER }}/python-db-test:latest .
 
       - name: Upload container to Docker Hub with Push
-        run: docker push ${{ secrets.DOCKER_USER }}/api-eindproject-jesse-dierckx:latest
+        run: docker push ${{ secrets.DOCKER_USER }}/python-db-test:latest

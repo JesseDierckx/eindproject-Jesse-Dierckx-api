@@ -17,14 +17,18 @@ class Item(ItemBase):
         orm_mode = True
 
 
-class UserBase(BaseModel):
-    email: str
+class ShopperBase(BaseModel):
+    username: str
 
 
-class UserCreate(UserBase):
+class ShopperCreate(ShopperBase):
     password: str
 
-class User(UserBase):
+
+class Shopper(ShopperBase):
     id: int
     is_active: bool
     items: list[Item] = []
+
+    class Config:
+        orm_mode = True
