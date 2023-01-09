@@ -38,9 +38,9 @@ def create_shopper_item(db: Session, item: schemas.ItemCreate, shopper_id: int):
     db.refresh(db_item)
     return db_item
 
-def delete_shopper_item(db: Session, shopper_id: int):
-    db_item = models.Item( owner_id=shopper_id)
-    db.delete(db_item)
-    db.commit()
-    db.refresh(db_item)
-    return "the item has been deleted"
+#def delete_shopper_item(db: Session, shopper_id: int):
+#    db_item = models.Item( owner_id=shopper_id)
+#    db.delete(db_item)
+#    db.commit()
+#    db.refresh(db_item)
+#    return ("the item has been deleted")
