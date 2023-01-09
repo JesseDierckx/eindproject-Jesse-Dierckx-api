@@ -7,7 +7,7 @@ from fastapi.security import OAuth2PasswordBearer
 from fastapi import Depends, HTTPException, status
 
 
-SECRET_KEY = "ed09cb0ed70567fe825c961820fd28b4c6766a37b1fd2add92cae6b5afbdaf7a"
+SECRET_KEY = "6e34034cae5a1c8acd1a27894bb2027f36e993f5a8aa57e4293d5429f7a9538f"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 480
 
