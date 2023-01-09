@@ -1,10 +1,11 @@
-from passlib.context import CryptContext
-import crud
-from sqlalchemy.orm import Session
-from jose import JWTError, jwt
-from datetime import datetime, timedelta
 from fastapi.security import OAuth2PasswordBearer
 from fastapi import Depends, HTTPException, status
+from datetime import datetime, timedelta
+
+import crud
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from sqlalchemy.orm import Session
 
 
 SECRET_KEY = "6e34034cae5a1c8acd1a27894bb2027f36e993f5a8aa57e4293d5429f7a9538f"
