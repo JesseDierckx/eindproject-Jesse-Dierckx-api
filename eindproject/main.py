@@ -84,22 +84,6 @@ def read_shopper(shopper_id: int, db: Session = Depends(get_db), token: str = De
         raise HTTPException(status_code=404, detail="Shopper not found")
     return db_shopper
 
-#@app.delete("/shoppers/delete", response_model=schemas.Shopper)
-#def delete_shopper(shopper_id: int, db: Session = Depends(get_db)):
-#    db_shopper = crud.get_shopper(db, shopper_id=shopper_id)
-#    db.delete(db_shopper)
-#    db.commit()
-#    db.refresh(db_shopper)
-#    return "the shopper has been deleted use the shoppers get function to check"
-
-
-
-#@app.get("/shoppers/me", response_model=schemas.Shopper)
-#def read_shoppers_me(db: Session = Depends(get_db), token: str = Depends(oauth2_schema)):
-#    current_shopper = auth.get_current_shopper(db, token)
-#    return current_shopper
-
-
 @app.post("/shoppers/{shopper_id}/items/", response_model=schemas.Item)
 def create_item_for_shopper(
     shopper_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
@@ -125,3 +109,18 @@ def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db), t
 #        session.delete(shopper)
 #        session.commit()
 #        return {"ok": True}
+
+#@app.delete("/shoppers/delete", response_model=schemas.Shopper)
+#def delete_shopper(shopper_id: int, db: Session = Depends(get_db)):
+#    db_shopper = crud.get_shopper(db, shopper_id=shopper_id)
+#    db.delete(db_shopper)
+#    db.commit()
+#    db.refresh(db_shopper)
+#    return "the shopper has been deleted use the shoppers get function to check"
+
+
+
+#@app.get("/shoppers/me", response_model=schemas.Shopper)
+#def read_shoppers_me(db: Session = Depends(get_db), token: str = Depends(oauth2_schema)):
+#    current_shopper = auth.get_current_shopper(db, token)
+#    return current_shopper
