@@ -1,7 +1,7 @@
 version: "3.9"
 services:
  api-service-eindproject:
-  image: r0793084/python-db-test
+  image: r0793084/api-eindproject-jesse-dierckx
   ports:
     - "8000:8000"
   volumes:
