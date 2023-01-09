@@ -8,10 +8,10 @@ from fastapi.security import HTTPBasic, HTTPBasicCredentials
 
 import os
 from database import SessionLocal, engine
-import crud
-import models
-import schemas
-import auth
+from myproject import crud
+from myproject import models
+from myproject import schemas
+from myproject import auth
 
 if not os.path.exists('.\sqlitedb'):
     os.makedirs('.\sqlitedb')
