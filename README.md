@@ -98,6 +98,9 @@ Hieronder zal ik laten zien dat ik de correcte manier heb gebruikt om een crus o
 
 ## De docker-compose file
 ![img_33.png](images/img_33.png)
+
+## De workflow file
+![img_50.png](images/img_50.png)
 zoals je kan zien is alles op een fatsoenlijke manier opgebouwd.
 
 ### Github actions
