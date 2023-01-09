@@ -1,6 +1,8 @@
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
+from fastapi.middleware.cors import CORSMiddleware
+
 
 import os
 
@@ -20,6 +22,22 @@ models.Base.metadata.create_all(bind=engine)
 print("Tables created.......")
 
 app = FastAPI()
+
+
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+    "https://localhost.tiangolo.com",
+    "http://127.0.0.1:5500"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Dependency
 def get_db():
