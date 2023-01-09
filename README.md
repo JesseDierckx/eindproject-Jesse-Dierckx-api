@@ -101,7 +101,7 @@ Hieronder zal ik laten zien dat ik de correcte manier heb gebruikt om een crus o
 
 ## De workflow file
 ![img_50.png](images/img_50.png)
-zoals je kan zien is alles op een fatsoenlijke manier opgebouwd.
+Zoals je kan zien is alles op een fatsoenlijke manier opgebouwd.
 
 ### Github actions
 ![img40.png](images/img40.png)
@@ -120,9 +120,9 @@ zoals je kan zien is alles op een fatsoenlijke manier opgebouwd.
 
 
 
-p.s de link helemaal vanboven is om naar mijn contributors pagina te gaan van mijn API repository.
-en als je ziet dat de foto's weg zijn in mijn github repository ik heb deze later in de images map gezet.
-+ ik heb er nog een file bijgestoken met de passwords van de aangemaakte users zodat u ook zelf zou kunnen checken of het daadwerkelijk werkt of niet deze staat in de images map.
+p.s De link helemaal vanboven is om naar mijn contributors pagina te gaan van mijn API repository.
+En als je ziet dat de foto's weg zijn in mijn github repository ik heb deze later in de images map gezet.
++ Ik heb er nog een file bijgestoken met de passwords van de aangemaakte users zodat u ook zelf zou kunnen checken of het daadwerkelijk werkt of niet deze staat in de images map.
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/JesseDierckx/eindproject-Jesse-Dierckx-api/graphs/contributors
