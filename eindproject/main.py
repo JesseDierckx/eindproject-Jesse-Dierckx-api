@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 
 import os
 
-import auth
+from eindproject import auth
 import crud
 import models
 import schemas
